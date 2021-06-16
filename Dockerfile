@@ -1,6 +1,6 @@
-FROM tomcat:8.5.35-jre10 as build
+FROM tomcat:8.5.35-jre10
 RUN curl -O -L https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
-ADD SampleWebApp.war /usr/local/tomcat/webapps/
+ADD SampleWebApp.war /opt/tomcat/webapps/
 EXPOSE 8080
-CMD chmod +x /usr/local/tomcat/bin/catalina.sh
+CMD chmod +x /opt/tomcat/bin/catalina.sh
 CMD ["catalina.sh", "run"]

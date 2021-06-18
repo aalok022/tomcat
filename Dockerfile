@@ -4,6 +4,6 @@ RUN mkdir /opt/tomcat/
 WORKDIR /opt/tomcat
 WORKDIR /opt/tomcat/webapps
 RUN curl -O -L https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
-ADD SampleWebApp.war /opt/tomcat/webapps/
+ADD SampleWebApp.war /webapps
 CMD ["catalina.sh", "run"]
 

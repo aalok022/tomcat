@@ -4,6 +4,6 @@ MAINTAINER Alok Wosti
 #WORKDIR /opt/tomcat
 #WORKDIR /opt/tomcat/webapp
 #RUN curl -O -L https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
-RUN cp home/alokwosti/Downloads/sample.war /usr/local/tomcat/webapps
+RUN cp SampleWebApp.war /usr/local/tomcat/webapps
 CMD ["catalina.sh", "run"]
 
